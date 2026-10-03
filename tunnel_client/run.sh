@@ -13,11 +13,12 @@ if [[ -z "${TUNNEL_ID}" || -z "${CONTROL_PLANE_API_KEY}" || -z "${MCP_ACCESS_TOK
 fi
 
 export CONTROL_PLANE_API_KEY
+export MCP_AUTHORIZATION="Bearer ${MCP_ACCESS_TOKEN}"
 export MCP_SERVER_URL MCP_ACCESS_TOKEN LOG_LEVEL
 
 exec tunnel-client run \
   --control-plane.api-key=env:CONTROL_PLANE_API_KEY \
   --control-plane.tunnel-id="${TUNNEL_ID}" \
   --mcp.server-url="${MCP_SERVER_URL}" \
-  --mcp.extra-headers='Authorization: Bearer env:MCP_ACCESS_TOKEN' \
+  --mcp.extra-headers='Authorization: env:MCP_AUTHORIZATION' \
   --log.level="${LOG_LEVEL}"
