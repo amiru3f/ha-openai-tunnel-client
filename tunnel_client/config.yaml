@@ -11,12 +11,12 @@ init: false
 options:
   tunnel_id: ""
   control_plane_api_key: ""
-  mcp_server_url: "https://home.amirusef.dev/api/mcp"
+  mcp_server_url: ""
   mcp_access_token: ""
   log_level: info
 schema:
   tunnel_id: str
   control_plane_api_key: password
-  mcp_server_url: url
+  mcp_server_url: str
   mcp_access_token: password
   log_level: list(trace|debug|info|warn|error)

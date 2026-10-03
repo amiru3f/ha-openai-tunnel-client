@@ -12,7 +12,7 @@ private while the client makes an outbound connection to OpenAI.
 4. Configure:
    - `tunnel_id`: the OpenAI Secure MCP Tunnel ID.
    - `control_plane_api_key`: an OpenAI runtime API key with **Tunnels Read + Use**.
-   - `mcp_server_url`: the private Home Assistant MCP endpoint.
+   - `mcp_server_url`: your private Home Assistant MCP endpoint.
    - `mcp_access_token`: the bearer token accepted by that endpoint.
 5. Start the add-on and verify its log reports a healthy, ready tunnel client.
 
