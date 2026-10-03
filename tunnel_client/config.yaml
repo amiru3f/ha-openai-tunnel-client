@@ -1,5 +1,5 @@
 name: OpenAI Tunnel Client
-version: "0.0.15"
+version: "0.0.15.1"
 slug: openai_tunnel_client
 description: Connect a private Home Assistant MCP server to an OpenAI Secure MCP Tunnel.
 url: https://github.com/amiru3f/ha-openai-tunnel-client
